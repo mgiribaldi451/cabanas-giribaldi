@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilo.css" />
+  <title>Formulario de pre reserva de la estadia en La Serrana</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="cabañas, sierras, hospedaje, merlo, san luis , reservar" />
+  <meta name="description" content="Reserva tu lugar en La Serrana y disfruta de una excelente estadia." />
+
+</head>
+
+<body>
+  <div class="container grillares">
+    <header class="head">
+      <a href="#"><img src="../imagenes/cropped-EE-Logo-La-Serrana-120x85.png" class="head__logo"></a>
+    </header>
+
+    
+      <nav class="navbar ">
+
+        <ul class="navbar__lista">
+          <li class="navbar__item"><a href="../index.html" class="navbar__link">Inicio</a></li>
+
+          <li class="navbar__item"><a href="../cabanas/cabanas.html" class="navbar__link">Cabañas</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Reservas</a></li>
+          <li class="navbar__item"><a href="" class="navbar__link">Información</a>
+
+            <ul class="navbar__submenu ">
+              <li class="navbar__item"><a href="../quienessomos/quienessomos.html" class="navbar__link">Quienes
+                  Somos</a>
+              </li>
+              <li class="navbar__item"><a href="../ComoLlegar/comollegar.html" class="navbar__link">Como Llegar</a></li>
+              <li class="navbar__item"><a href="../Servicios/servicios.html" class="navbar__link">Servicios</a></li>
+            </ul>
+
+          </li>
+        </ul>
+
+      </nav>
+    
+
+    <div class="intro">
+      <p class="intro__text">
+        Al completar el formulario nos está enviando la preserva. Se le enviara un correo para concretar la reserva.
+
+        Muchas gracias por alojarse en La Serrana.</p>
+    </div>
+    <div class="form">
+      <form>
+        <center>
+          <label for="nombre_apellido">Nombre:</label>
+          <input type="text" name="nombre_apellido" /><br><br>
+          <label for="correo">correo:</label>
+          <input type="email" name="correo" /><br><br>
+          <label for="cabana">Cabañas para:</label>
+          <select name="cabana">
+            <option value="2"> 2 personas </option>
+            <option value="4">4 personas</option>
+            <option value="6">6 personas</option>
+          </select><br><br>
+          <label for="ingreso">Ingreso</label>
+          <input type="date" name="ingreso" /><br><br>
+          <label for="egreso">Salida</label>
+          <input type="date" name="egreso" /><br><br>
+          <label for="cuota">Cantidad de cuotas:</label>
+          <select name="cuota">
+            <option value="1"> 1 cuota </option>
+            <option value="3">3 cuotas</option>
+            <option value="6">6 cuotas</option>
+            <option value="12">12 cuotas</option>
+          </select><br><br>
+          <label for="aceppta">Acepta terminos y condiciones:</label>
+          <input type="checkbox" name="acepta" value="1"><br><br>
+          <input type="button" value="Enviar">
+          <input type="reset" value="Limpiar">
+        </center>
+      </form>
+    </div>
+
+    <div class="imagenres">
+      <img src="../imagenes/001.jpg" alt="reserva" width="80%" height="100%">
+    </div>
+
+    <footer class="pie">
+      <div class="pie__footer">
+        <p class="pie__text"> | LaSerrana@gmail.com | Tel:2657- 589865 </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

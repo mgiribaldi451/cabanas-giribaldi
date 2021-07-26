@@ -1,0 +1,248 @@
+$fondo:"../imagenes/fondomadera5.jpeg";
+$imganimacion1: "../imagenes/sierra0.jpg";
+$imganimacion2: "../imagenes/sierra1.jpg";
+$imganimacion3: "../imagenes/sierra2.jpg";
+
+body{
+   background-image: url($fondo);
+}
+
+.container {
+   width: 70%;
+   /*padding-right: 15px;
+   padding-left: 15px;*/
+   margin-right: auto;
+   margin-left: auto;
+ }
+
+.grilla{
+   display: grid;
+   grid-template-areas: 
+   "head menus" 
+   "animation animation" 
+   "cabanas cabanas" 
+   "pie pie"   
+   ;
+   grid-row-gap: 30px;
+   
+   height: 100vh; 
+}
+
+.grillacab{
+   display: grid;
+   grid-template-areas: 
+   "head menus" 
+   "cab2 per2" 
+   "cab4 per4" 
+   "cab6 per6" 
+   "pie pie"    
+   ;
+   grid-row-gap: 30px;
+   
+   height: 100vh; 
+}
+.grillares{
+    display: grid;
+    grid-template-areas: 
+    "head menus"
+    "intro intro" 
+    "form form" 
+    "imagen imagen" 
+    "pie pie"    
+    ;
+    grid-row-gap: 30px;
+    
+    height: 100vh; 
+ }
+
+.head{
+
+   grid-area: head;
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   align-items: start;
+   position: relative; 
+
+   &__logo{
+      margin-top: 15px;
+      padding-left: 10%;
+   }
+
+}
+
+.navbar {
+
+   padding-top: 3%;
+   padding-left: 30%;
+   grid-area: menus;
+
+   list-style: none;
+   
+   text-align: center;
+   &__lista{
+      list-style:none;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis:0%;  
+   }
+   &__item{
+      padding-left: 0px;
+      padding-right:0px;
+      border: 2px solid;
+      border-radius: 6px;
+      border-color: #583102;
+      background: rgb(204, 161, 68);
+      :hover{
+         
+         background:#D37414;
+
+      }
+   }
+
+   &__link{
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      padding: 0px 10px;
+      font-size: 20px;
+      color: rgb(252, 249, 249); 
+   }
+   
+   &__submenu{
+      display: none;
+ 
+   }
+ }
+
+ .animacion{
+    grid-area: animation;
+    margin-top: 60px;
+    box-sizing: border-box;
+    
+    width: auto;
+    height:600px;
+    background-size:100% 100%;
+    -webkit-animation:animacion 10s infinite;
+    -moz-animation:animacion 10s infinite;
+    -webkit-border-radius:40px 40px 40px 40px ;
+    -moz-border-radius:40px 40px 40px 40px ;
+  }
+  
+  @-webkit-keyframes animacion  {
+    0%, 30%{
+       background-image:url($imganimacion1);
+    }
+   35%, 65%{
+     background-image:url($imganimacion2);
+   }
+   70%, 100%{
+     background-image:url($imganimacion3);
+   }
+  }
+  
+  @-moz-keyframes animacion  {
+    0%, 30%{
+       background-image:url($imganimacion1);
+    }
+   35%, 65%{
+     background-image:url($imganimacion2);
+   }
+   70%, 100%{
+     background-image:url($imganimacion3);
+   }
+  }
+
+ 
+
+.cabanas{
+   grid-area:cabanas;
+    
+    list-style:none;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    justify-content: space-evenly; 
+}
+
+$cabss:(
+    cab2:cab2,
+    cab4:cab4,
+    cab6:cab6
+);
+
+@each $cabs, $area in $cabss {
+    .#{$cabs}{
+        grid-area: $area;
+        margin-top: 60px;
+        margin-left: 5%;
+    }
+}
+
+$perss:(
+    per2:per2,
+    per4:per4,
+    per6:per6
+);
+
+@each $per, $areas in $perss {
+    .#{$per}{
+        grid-area: $areas;
+        margin-top: 60px;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        
+    }
+}
+
+
+ .pie{
+    
+    grid-area: pie;
+
+    &__footer{
+       background-color: rgb(204, 161, 68);
+    }
+    &__text{
+      font-family: 'Roboto', sans-serif;
+      color:rgba(10, 8, 8, 0.712);
+      text-align:center;
+
+    }
+ }
+
+.intro{
+    grid-area: intro;
+    
+    
+    &__text{
+        margin-top: 60px;
+        margin-left: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        color: rgb(250, 249, 248);
+     }
+}
+
+.form{
+    grid-area: form;
+    background-color: rgba(204, 161, 68, 0.536);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(250, 249, 248);
+    align-content: center;
+    border-radius: 30px;
+    
+}
+ .imagenres{
+    grid-area: imagen;
+    margin-top: 5%;
+    margin-left: 15%;
+    
+ }

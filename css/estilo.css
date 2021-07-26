@@ -1,0 +1,177 @@
+body {
+  background-image: url("../imagenes/fondomadera5.jpeg"); }
+
+.container {
+  width: 70%;
+  /*padding-right: 15px;
+   padding-left: 15px;*/
+  margin-right: auto;
+  margin-left: auto; }
+
+.grilla {
+  display: grid;
+  grid-template-areas: "head menus"  "animation animation"  "cabanas cabanas"  "pie pie";
+  grid-row-gap: 30px;
+  height: 100vh; }
+
+.grillacab {
+  display: grid;
+  grid-template-areas: "head menus"  "cab2 per2"  "cab4 per4"  "cab6 per6"  "pie pie";
+  grid-row-gap: 30px;
+  height: 100vh; }
+
+.grillares {
+  display: grid;
+  grid-template-areas: "head menus" "intro intro"  "form form"  "imagen imagen"  "pie pie";
+  grid-row-gap: 30px;
+  height: 100vh; }
+
+.head {
+  grid-area: head;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  position: relative; }
+  .head__logo {
+    margin-top: 15px;
+    padding-left: 10%; }
+
+.navbar {
+  padding-top: 3%;
+  padding-left: 30%;
+  grid-area: menus;
+  list-style: none;
+  text-align: center; }
+  .navbar__lista {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%; }
+  .navbar__item {
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 2px solid;
+    border-radius: 6px;
+    border-color: #583102;
+    background: #cca144; }
+    .navbar__item :hover {
+      background: #D37414; }
+  .navbar__link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 10px;
+    font-size: 20px;
+    color: #fcf9f9; }
+  .navbar__submenu {
+    display: none; }
+
+.animacion {
+  grid-area: animation;
+  margin-top: 60px;
+  box-sizing: border-box;
+  width: auto;
+  height: 600px;
+  background-size: 100% 100%;
+  -webkit-animation: animacion 10s infinite;
+  -moz-animation: animacion 10s infinite;
+  -webkit-border-radius: 40px 40px 40px 40px;
+  -moz-border-radius: 40px 40px 40px 40px; }
+
+@-webkit-keyframes animacion {
+  0%, 30% {
+    background-image: url("../imagenes/sierra0.jpg"); }
+  35%, 65% {
+    background-image: url("../imagenes/sierra1.jpg"); }
+  70%, 100% {
+    background-image: url("../imagenes/sierra2.jpg"); } }
+
+@-moz-keyframes animacion {
+  0%, 30% {
+    background-image: url("../imagenes/sierra0.jpg"); }
+  35%, 65% {
+    background-image: url("../imagenes/sierra1.jpg"); }
+  70%, 100% {
+    background-image: url("../imagenes/sierra2.jpg"); } }
+
+.cabanas {
+  grid-area: cabanas;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly; }
+
+.cab2 {
+  grid-area: cab2;
+  margin-top: 60px;
+  margin-left: 5%; }
+
+.cab4 {
+  grid-area: cab4;
+  margin-top: 60px;
+  margin-left: 5%; }
+
+.cab6 {
+  grid-area: cab6;
+  margin-top: 60px;
+  margin-left: 5%; }
+
+.per2 {
+  grid-area: per2;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+
+.per4 {
+  grid-area: per4;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+
+.per6 {
+  grid-area: per6;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+
+.pie {
+  grid-area: pie; }
+  .pie__footer {
+    background-color: #cca144; }
+  .pie__text {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(10, 8, 8, 0.712);
+    text-align: center; }
+
+.intro {
+  grid-area: intro; }
+  .intro__text {
+    margin-top: 60px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #faf9f8; }
+
+.form {
+  grid-area: form;
+  background-color: rgba(204, 161, 68, 0.536);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #faf9f8;
+  align-content: center;
+  border-radius: 30px; }
+
+.imagenres {
+  grid-area: imagen;
+  margin-top: 5%;
+  margin-left: 15%; }
