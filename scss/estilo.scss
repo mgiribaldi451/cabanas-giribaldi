@@ -7,6 +7,11 @@ body{
    background-image: url($fondo);
 }
 
+.gridhead{
+   display: grid;
+   grid-template-areas: "head menus" ;
+}
+
 .container {
    width: 70%;
    /*padding-right: 15px;
@@ -205,6 +210,7 @@ $perss:(
  .pie{
     
     grid-area: pie;
+    margin-top: 5%;
 
     &__footer{
        background-color: rgb(204, 161, 68);
@@ -222,17 +228,21 @@ $perss:(
     
     
     &__text{
-        margin-top: 60px;
+        margin-top: 40px;
         margin-left: 50px;
         font-family: 'Roboto', sans-serif;
-        font-size: 25px;
-        color: rgb(250, 249, 248);
+        font-size: 20px;
+        color: rgb(245, 244, 241);
+        line-height : 40px;
+
+
+        
      }
 }
 
 .form{
     grid-area: form;
-    background-color: rgba(204, 161, 68, 0.536);
+    background-color: rgba(204, 161, 68, 0.317);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: rgb(250, 249, 248);
@@ -246,3 +256,54 @@ $perss:(
     margin-left: 15%;
     
  }
+
+ .fondo{
+   background-color: rgba(204, 161, 68, 0.317);
+ }
+
+ .prueba{
+    align-content: center;
+ }
+ #frame{ 
+   margin-left: 10%; 
+   width:80%;
+   height:450px; 
+   border-radius: 3%;
+   margin-top: 2%;
+ }
+
+ .tabla{
+   grid-area: tabla;
+}
+table {
+   margin-top: 2%;
+   border: 3px solid;
+   background-color:#cccccc;
+   width: 90%;
+   margin-left: 5%;
+}
+ 
+th {
+   
+ background-color: rgba(128, 128, 128, 0.582);
+ border: none;
+}
+ 
+tr, td {
+ border: none;
+ background-color:#cccccc;
+}
+
+.titulo{
+   margin-top: 60px;
+   margin-left: 50px;
+   font-family: 'Roboto', sans-serif;
+   color: rgb(245, 244, 241);
+   text-align: center;
+}
+.titulo2{
+   margin-top: 60px;
+   margin-left: 50px;
+   font-family: 'Roboto', sans-serif;
+   color: rgb(245, 244, 241);
+}

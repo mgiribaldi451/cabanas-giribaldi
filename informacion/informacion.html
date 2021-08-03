@@ -1,40 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="cabañas, sierras, hospedaje, merlo, san luis , informacion, complejo" />
-    <meta  name="description" content="Toda la informacion que necesitas saber para alojarte en nuestro complejo y disfrutar tus vacaciones." />
+    <meta name="description"
+        content="Toda la informacion que necesitas saber para alojarte en nuestro complejo y disfrutar tus vacaciones." />
     <title>Informacion sobre el complejo la serrana</title>
-
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
-        <nav class="navbar">
+        <div class="gridhead">
+            <header class="head">
+                <a href="#"><img src="../imagenes/cropped-EE-Logo-La-Serrana-120x85.png" class="head__logo"></a>
+            </header>
+            <nav class="navbar">
 
-            <ul class="navbar__lista">
-                <li class="navbar__item"><a href="../index.html" class="navbar__link">Inicio</a></li>
+                <ul class="navbar__lista">
+                    <li class="navbar__item"><a href="../index.html" class="navbar__link">Inicio</a></li>
 
-                <li class="navbar__item"><a href="../reserva/cabanas.html" class="navbar__link">Cabañas</a></li>
-                <li class="navbar__item"><a href="../reserva/reservas.html" class="navbar__link">Reservas</a></li>
-                <li class="navbar__item"><a href="" class="navbar__link">Información</a>
-                    <ul class="navbar__submenu">
-                        <li class="navbar__item"><a href="../quienessomos/quienessomos.html"
-                                class="navbar__link">Quienes Somos</a></li>
-                        <li class="navbar__item"><a href="../ComoLlegar/comollegar.html" class="navbar__link">Como
-                                Llegar</a></li>
-                        <li class="navbar__item"><a href="../Servicios/servicios.html"
-                                class="navbar__link">Servicios</a></li>
-                    </ul>
+                    <li class="navbar__item"><a href="../cabanas/cabanas.html" class="navbar__link">Cabañas</a></li>
+                    <li class="navbar__item"><a href="../reserva/reservas.html" class="navbar__link">Reservas</a></li>
+                    <li class="navbar__item"><a href="../Servicios/servicios.html" class="navbar__link">Servicios</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Información</a></li>
+                </ul>
 
-                </li>
-            </ul>
-
-        </nav>
+            </nav>
+        </div>
 
         <!-- se agregaran las secciones  que estaban en quienes somos , promociones  y servicios -->
 
+        <div class="titulo ">
+            <h1>Informacion</h1>
+        </div>
+
+        <section class="intro ">
+            <H2 class="titulo2"> Quienes somos </H2>
+
+            <p class="intro__text fondo">Cabañas La Serrana es un complejo de cabañas, con más de 10 años de trayectoria
+                en el medio,
+                ubicada a sólo 5 minutos del centro de la Villa de Merlo. Las mismas marcaron el inicio de un
+                emprendimiento turístico que año a año fue creciendo en servicios e instalaciones para convertirse en el
+                mayor complejo de Cabañas de la Provincia de San Luis. Nuestra filosofía de trabajo: “Hacer que el
+                huésped se sienta como en casa, recibimos huéspedes y despedimos amigos”. La atención personalizada y la
+                calidez humana de nuestro equipo de trabajo hacen de su estadía en Cabañas La Serrana una experiencia
+                inolvidable. Pasión, Responsabilidad, Profesionalismo, son los valores que sostienen nuestro accionar
+                día a día.</p>
+
+
+        </section>
+        <section class="intro ">
+            <H2 class="titulo2">Como llegar</H2>
+            <p class="intro__text fondo">Aquí le mostraremos el camino para llegar a su destino, con el
+                fin de facilitarle desde ya su comodidad a nuestro complejo</p>
+        </section>
+        <section class="prueba">
+
+            <iframe id="frame"
+                src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d13483.694338501611!2d-65.0180607744993!3d-32.34076094769234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d-32.3338269!2d-64.9991227!4m3!3m2!1d-32.333878999999996!2d-64.9989935!5e0!3m2!1ses-419!2sar!4v1497564799598"></iframe>
+
+        </section>
+        <section class="intro fondo">
+            <p class="intro__text"> Los Esperamos. Los buenos recuerdos quedaran en la memoria de su familia </p>
+            <p class="intro__text"> </p>
+        </section>
+        <footer class="pie">
+            <div class="pie__footer">
+                <p class="pie__text"> | LaSerrana@gmail.com | Tel:2657- 589865 </p>
+            </div>
+        </footer>
+
     </div>
 </body>
+
 </html>

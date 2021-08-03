@@ -1,111 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-        <title>La Serrana</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width" charset="UTF-8" />
-        <link rel="stylesheet" href="./servicio.css">
-  </head>
- 
-  <body>
-    <div class="contenedor">
-    <header class="head">      
-        <a href="#"><img src="../imagenes/cropped-EE-Logo-La-Serrana-120x85.png" width="200%" height="80%" ></a>  
-    </header>
-      
 
+<head>
+  <title>La Serrana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width" charset="UTF-8" />
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="gridhead">
+      <header class="head">
+        <a href="#"><img src="../imagenes/cropped-EE-Logo-La-Serrana-120x85.png" class="head__logo"></a>
       </header>
+      <nav class="navbar">
 
+        <ul class="navbar__lista">
+          <li class="navbar__item"><a href="../index.html" class="navbar__link">Inicio</a></li>
 
-        <nav class="menu">
-      
-            <ul class="listamenu">
-              <li><a href="../index.html">Inicio</a></li>			  
-                        
-              <li><a href="../cabanas/cabanas.html">Cabañas</a></li>
-              <li><a href="../reserva/reservas.html">Reservas</a></li>			  
-                        
-              <li><a href="../promociones/promociones.html">promociones</a></li>	
-              <li><a href="">Información</a>
-              
-                <ul> 
-                  <li><a href="../quienessomos/quienessomos.html">Quienes Somos</a></li>	
-                  <li><a href="../ComoLlegar/comollegar.html">Como Llegar</a></li>	
-                  <li><a href="#">Servicios</a></li>	
-                </ul>		     
-              
-              </li>		  
-            </ul>
-               
-        </nav>
-      	   
+          <li class="navbar__item"><a href="../reserva/cabanas.html" class="navbar__link">Cabañas</a></li>
+          <li class="navbar__item"><a href="../reserva/reservas.html" class="navbar__link">Reservas</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+          <li class="navbar__item"><a href="../informacion/informacion.html" class="navbar__link">Información</a></li>
+        </ul>
+
       </nav>
-      <div>
-        <h1 class="titulo">Servicios</h1>
+    </div>
+    <div>
+      <h1 class="titulo">Servicios</h1>
+    </div>
+    <section class="intro">
+      <p class="intro__text">En La Serrana cuidamos cada detalle para que vivas con nosotros una experiencia única e inolvidable. Ofrecemos
+        muchos servicios sin cargo porque lo más importante para nosotros es que pases una excelente estadía y que
+        vuelvas.</p>
+    </section>
+    <section class="tabla">
+      <table cellpading="5px" cellspacing="60px">
+        <tr>
+          <th>Servicios de cabañas</th>
+          <th>Servicios del complejo</th>
+          <th>Servicios Adicionales</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Servicio de desayuno</li>
+              <li>Servicio de limpieza diario de caba&ntildea</li>
+              <li>Calefacción</li>
+              <li>Internet Wi-Fi</li>
+              <li>LED T.V. satelital</li>
+              <li>Caja de seguridad digital</li>
+              <li>Accesorios de bebé; sin cargo (practicuna, sillita de comer y ba&ntilde;era)</li>
+              <li>Estacionamiento techado individual</li>
+              <li>Parrillas individuales</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Bar-Resto</li>
+              <li>Piscina climatizada a 28º (Cerrada desde 30/Abril al 07/Julio)</li>
+              <li>Salón con aparatos de Gimnasio</li>
+              <li>Cancha de fútbol</li>
+              <li>Cancha de voley playa</li>
+              <li>Pool, metegol y mesa de ping pong</li>
+              <li>2 camas elásticas</li>
+              <li>Escalador y hamacas para ni&ntilde;os</li>
+              <li>Servicio médico de emergencias</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Cabalgatas</li>
+              <li>Trekking </li>
+              <li>Traveías en Cuatris </li>
+              <li>Excursiones en 4x4</li>
+              <li>Tirolesa</li>
+              <li>Paseos en bicicletas</li>
+
+            </ul>
+          </td>
+
+      </table>
+    </section>
+
+
+
+
+    <footer class="pie">
+      <div class="pie__footer">
+          <p class="pie__text"> | LaSerrana@gmail.com | Tel:2657- 589865 </p>
       </div>
-      <section class="intro">
-          <p >En La Serrana cuidamos cada detalle para que vivas con nosotros una experiencia única e inolvidable. Ofrecemos muchos servicios sin cargo porque lo más importante para nosotros es que pases una excelente estadía y que vuelvas.</p>
-      </section>
-      <section class="tabla">
-            <table cellpading="5px" cellspacing="60px">
-                    <tr>
-                        <th>Servicios de cabañas</th>
-                        <th>Servicios del complejo</th>
-                        <th>Servicios Adicionales</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Servicio de desayuno</li>
-                                <li>Servicio de limpieza diario de caba&ntildea</li>
-                                <li>Calefacción</li>
-                                <li>Internet Wi-Fi</li>
-                                <li>LED T.V. satelital</li>
-                                <li>Caja de seguridad digital</li>
-                                <li>Accesorios de bebé; sin cargo (practicuna, sillita de comer y ba&ntilde;era)</li>
-                                <li>Estacionamiento techado individual</li>
-                                <li>Parrillas individuales</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul> 
-                                <li>Bar-Resto</li>	
-                                <li>Piscina climatizada a 28º (Cerrada desde 30/Abril al 07/Julio)</li>
-                                <li>Salón con aparatos de Gimnasio</li>
-                                <li>Cancha de fútbol</li>
-                                <li>Cancha de voley playa</li>
-                                <li>Pool, metegol y mesa de ping pong</li>
-                                <li>2 camas elásticas</li>
-                                <li>Escalador y hamacas para ni&ntilde;os</li>
-                                <li>Servicio médico de emergencias</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul> 
-                                <li>Cabalgatas</li>	
-                                <li>Trekking </li>
-                                <li>Traveías en Cuatris </li>
-                                <li>Excursiones en 4x4</li>
-                                <li>Tirolesa</li>
-                                <li>Paseos en bicicletas</li>
-                
-                            </ul>	                           
-                        </td>
+  </footer>
+  </div>
+</body>
 
-            </table>
-        </section>
-
-
-
-
-      <footer id="pie">
-        <div>
-          <p> | LaSerrana@gmail.com | Tel:2657- 589865 </p>
-		</div>
-	</footer>
-</div>
-  </body>
 </html>
-
